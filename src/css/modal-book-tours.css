@@ -1,0 +1,307 @@
+/* #region  Backdrop*/
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(32, 35, 33, 0.5);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+body:has(.backdrop.is-open) {
+  overflow: hidden;
+}
+/* #endregion  */
+
+/* #region  Modal Window*/
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 504px;
+  padding: 52px 32px 36px;
+  background-color: var(--light);
+}
+
+@media only screen and (max-width: 375px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 478px;
+    height: 581px;
+    padding: 60px 42px 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal {
+    width: 774px;
+    height: 745px;
+    padding: 116px 100px 60px;
+  }
+}
+/* #endregion  */
+
+/* #region  Btn Close*/
+.modal-form {
+  position: relative;
+}
+
+.btn-close {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-close,
+  .icon-close {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-close {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .btn-close {
+    right: 40px;
+    top: 40px;
+  }
+}
+/* #endregion  */
+
+/* #region  Form Title*/
+.modal-form-title {
+  color: var(--primary-text);
+  text-align: center;
+  font-size: 24px;
+  font-weight: var(--medium);
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-form-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal-form-title {
+    margin-bottom: 28px;
+  }
+}
+/* #endregion  */
+
+/* #region  Form Text*/
+.modal-form-text {
+  color: var(--secondary-text);
+  text-align: center;
+  font-size: 14px;
+  font-weight: var(--regular);
+  width: 281px;
+  margin: 0 auto 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-form-text {
+    font-size: 18px;
+    width: 374px;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal-form-text {
+    font-size: 24px;
+    width: 523px;
+  }
+}
+/* #endregion  */
+
+/* #region  Field*/
+.group-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .group-input {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .group-input {
+    margin-bottom: 32px;
+  }
+}
+.field {
+  border: none;
+  border-bottom: 2px solid var(--grey);
+  background-color: transparent;
+  color: var(--secondary-text);
+  height: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .field {
+    height: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .field {
+    height: 37px;
+  }
+}
+
+.group-input .label-text {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: var(--regular);
+  transition-property: color;
+  transition: 0.5s ease-in-out;
+}
+
+.label-text {
+  color: var(--secondary-text);
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .label-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .label-text {
+    font-size: 24px;
+  }
+}
+
+.field:focus-within ~ .label-text,
+.field:valid ~ .label-text,
+.field:invalid:not(:placeholder-shown) ~ .label-text {
+  font-size: 14px;
+  color: var(--grey);
+  top: -15%;
+}
+
+@media only screen and (min-width: 768px) {
+  .field:focus-within ~ .label-text,
+  .field:valid ~ .label-text,
+  .field:invalid:not(:placeholder-shown) ~ .label-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .field:focus-within ~ .label-text,
+  .field:valid ~ .label-text,
+  .field:invalid:not(:placeholder-shown) ~ .label-text {
+    font-size: 20px;
+  }
+}
+
+.field:invalid:not(:placeholder-shown) ~ .label-text {
+  color: red;
+}
+
+.field:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+/* #endregion  */
+
+/* #region  Checkbox*/
+.checkbox {
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .checkbox:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .checkbox:last-child {
+    margin-bottom: 46px;
+  }
+}
+
+.label-container {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.icon-tick {
+  fill: none;
+  stroke: #000;
+  opacity: 0;
+}
+
+.icon-agree {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--secondary-text);
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-property: opacity;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  justify-content: center;
+}
+
+.input-checkbox:checked + .label-text .icon-agree > .icon-tick {
+  opacity: 1;
+}
+
+/* #endregion  */
+
+/* #region  Btn Submit*/
+.modal-btn {
+  width: 100%;
+  height: 52px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-btn {
+    height: 56px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal-btn {
+    height: 69px;
+  }
+}
+/* #endregion  */

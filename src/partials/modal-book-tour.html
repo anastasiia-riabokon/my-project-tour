@@ -1,0 +1,103 @@
+<div class="backdrop is-open">
+  <div class="modal">
+    <button class="btn-close" type="button">
+      <svg class="icon-close" width="30" height="30" stroke="#202321">
+        <use href="./img/icons/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form">
+      <h2 class="modal-form-title">Book a tour</h2>
+      <p class="modal-form-text">
+        You can leave your application here and our manager will call you within
+        10 minutes
+      </p>
+
+      <div class="group-input">
+        <input
+          class="field"
+          type="text"
+          name="user_name"
+          id="userName"
+          placeholder="&nbsp;"
+          autocomplete="name"
+          pattern="[a-zA-Z]+"
+          required
+        />
+        <label class="label-text" for="userName">Your name*</label>
+      </div>
+
+      <div class="group-input">
+        <input
+          class="field"
+          type="tel"
+          name="user_phone"
+          id="userPhone"
+          placeholder="&nbsp;"
+          autocomplete="tel"
+          pattern="[0-9]{10}"
+          required
+        />
+        <label class="label-text" for="userPhone"> Phone number*</label>
+      </div>
+
+      <ul>
+        <li class="checkbox">
+          <input
+            class="input-checkbox visually-hidden"
+            type="checkbox"
+            name="variantTravel"
+            id="inHoverla"
+            value="true"
+          />
+          <label for="inHoverla" class="label-text label-container">
+            <span class="icon-agree">
+              <svg class="icon-tick" width="20" height="20">
+                <use href="./img/icons/icons.svg#icon-tick"></use>
+              </svg>
+            </span>
+            Ascent to Hoverla
+          </label>
+        </li>
+        <li class="checkbox">
+          <input
+            class="input-checkbox visually-hidden"
+            type="checkbox"
+            name="variantTravel"
+            id="inBukovel"
+            value="true"
+          />
+
+          <label for="inBukovel" class="label-text label-container">
+            <span class="icon-agree">
+              <svg class="icon-tick" width="20" height="20">
+                <use href="./img/icons/icons.svg#icon-tick"></use>
+              </svg>
+            </span>
+            Ski tour to Bukovel</label
+          >
+        </li>
+        <li class="checkbox">
+          <input
+            class="input-checkbox visually-hidden"
+            type="checkbox"
+            name="variantTravel"
+            id="inCarpathians"
+            value="true"
+          />
+
+          <label for="inCarpathians" class="label-text label-container"
+            ><span class="icon-agree">
+              <svg class="icon-tick" width="20" height="20">
+                <use href="./img/icons/icons.svg#icon-tick"></use>
+              </svg>
+            </span>
+            Week in Carpathians</label
+          >
+        </li>
+      </ul>
+
+      <button class="btn modal-btn" type="submit">CALL ME</button>
+    </form>
+  </div>
+</div>

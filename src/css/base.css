@@ -1,0 +1,74 @@
+body {
+  font-family: var(--font-family);
+  background-color: var(--light);
+}
+
+/* #region  Section Title*/
+.section-title {
+  color: var(--primary-text);
+  font-size: 32px;
+  font-weight: var(--regular);
+  margin-bottom: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-title {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 68px;
+    margin-bottom: 60px;
+  }
+}
+/* #endregion  */
+
+/* #region  Main Text*/
+.section-text {
+  color: var(--secondary-text);
+  font-weight: var(--regular);
+}
+/* #endregion  */
+
+/* #region Section Padding */
+.section {
+  padding: 26px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+/* #endregion  */
+
+/* #region  Button*/
+.btn {
+  background-color: var(--blue);
+  color: var(--light);
+  font-family: inherit;
+  font-weight: var(--medium);
+  border: none;
+  display: block;
+}
+/* #endregion  */
+
+.semibold {
+  font-weight: var(--semibold);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

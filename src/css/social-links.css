@@ -1,0 +1,24 @@
+.social-list {
+  display: flex;
+  gap: 32px;
+}
+
+.social-icon {
+  fill: var(--light);
+}
+
+.social-icon:focus {
+  fill: var(--blue);
+}
+
+@media screen and (hover: hover) {
+  .social-icon:hover {
+    fill: var(--blue);
+  }
+}
+
+@media screen and not (hover: hover) {
+  .social-icon:active {
+    fill: var(--blue);
+  }
+}

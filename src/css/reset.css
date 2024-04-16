@@ -7,6 +7,7 @@ h5,
 h6,
 p {
   margin: 0;
+  line-height: normal;
 }
 
 p:last-child {
@@ -22,14 +23,24 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
+  line-height: normal;
 }
 
 button {
   cursor: pointer;
+  outline: none;
+  line-height: normal;
+  padding: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input {
+  padding: 0;
+  width: 100%;
+  outline: none;
 }

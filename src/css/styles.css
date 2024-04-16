@@ -1,25 +1,36 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+@import url('./font.css');
+@import url('./normalize.css');
+@import url('./container.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
+@import url('./base.css');
+
+/* sections */
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./social-links.css');
+@import url('./about-us.css');
+@import url('./our-advantages.css');
+@import url('./upcoming-tours.css');
+@import url('./reviews.css');
+@import url('./gallery.css');
+@import url('./questions.css');
+@import url('./footer.css');
+
+/* modal windows */
+@import url('./modal-book-tours.css');
+@import url('./modal-tours-details.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --light: #f7fbfb;
+  --primary-text: #1b1d1b;
+  --secondary-text: #202321;
+  --blue: #5b86a1;
+  --grey: #a3a5a3;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
 }
