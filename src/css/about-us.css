@@ -1,0 +1,11 @@
+@media only screen and (min-width: 768px) {
+  .section-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-text {
+    font-size: 24px;
+  }
+}
