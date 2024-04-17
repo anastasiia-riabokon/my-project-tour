@@ -1,0 +1,161 @@
+/* #region  */
+@media only screen and (max-width: 767px) {
+  .advantages-img-desk-tab {
+    display: none;
+  }
+
+  .our-advantages .container {
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 1439px) {
+  .advantages-img-desk {
+    display: none;
+  }
+}
+/* #endregion  */
+
+/* #region  Position Img*/
+.adv-block-img {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.adv-img-two {
+  position: absolute;
+  top: 203px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-img-two {
+    top: 80px;
+    right: 0;
+  }
+}
+
+.adv-img-three {
+  position: absolute;
+  top: 80px;
+  transform: translateX(-20px);
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-img-one,
+  .adv-img-two {
+    width: 354px;
+    height: 441px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-img-one,
+  .adv-img-two {
+    width: 377px;
+    height: 588px;
+  }
+}
+/* #endregion  */
+
+/* #region  List*/
+.container-adv-img-list {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-adv-img-list {
+    height: 644px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container-adv-img-list {
+    height: 668px;
+  }
+}
+
+.adv-list {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-list {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.adv-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 7px 8px 30px;
+  width: 100%;
+
+  background-color: var(--blue);
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-item {
+    gap: 12px;
+    padding: 12px 0px 12px 44px;
+    width: 604px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-item {
+    padding-left: 126px;
+    width: 630px;
+  }
+}
+
+.adv-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-list {
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adv-item:not(:last-child) {
+    margin-bottom: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .icon-star {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.adv-text {
+  font-size: 14px;
+  color: var(--light);
+}
+
+@media only screen and (min-width: 768px) {
+  .adv-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .adv-text {
+    font-size: 24px;
+  }
+}
+/* #endregion  */
