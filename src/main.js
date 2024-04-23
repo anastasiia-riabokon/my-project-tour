@@ -1,5 +1,3 @@
-'use strict';
-
 // #region Scroll tour cards
 
 const tourCards = document.querySelectorAll('.tour-card');
@@ -11,6 +9,11 @@ let currentIndex = 0;
 function showCurrentCard() {
   tourCards.forEach(card => card.classList.remove('active'));
   tourCards[currentIndex].classList.add('active');
+  // Показуємо перші дві картки при завантаженні сторінки на екранах ширше за 768px і менше за 1440px
+  if (window.matchMedia('(min-width: 768px) and (max-width: 1439px)').matches) {
+    // tourCards[currentIndex].classList.add('active');
+    tourCards[currentIndex + 1].classList.add('active');
+  }
 }
 
 function goToNextCard() {
@@ -31,12 +34,6 @@ function goToPreviousCard() {
 
 leftArrowBtn.addEventListener('click', goToPreviousCard);
 rightArrowBtn.addEventListener('click', goToNextCard);
-
-// Показуємо перші дві картки при завантаженні сторінки на екранах ширше за 768px і менше за 1440px
-if (window.matchMedia('(min-width: 768px) and (max-width: 1439px)').matches) {
-  tourCards[0].classList.add('active');
-  tourCards[1].classList.add('active');
-}
 
 // Показуємо першу карту при завантаженні сторінки
 showCurrentCard();
