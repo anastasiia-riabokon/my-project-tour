@@ -32,6 +32,12 @@ function goToPreviousCard() {
 leftArrowBtn.addEventListener('click', goToPreviousCard);
 rightArrowBtn.addEventListener('click', goToNextCard);
 
+// Показуємо перші дві картки при завантаженні сторінки на екранах ширше за 768px і менше за 1440px
+if (window.matchMedia('(min-width: 768px) and (max-width: 1439px)').matches) {
+  tourCards[0].classList.add('active');
+  tourCards[1].classList.add('active');
+}
+
 // Показуємо першу карту при завантаженні сторінки
 showCurrentCard();
 
