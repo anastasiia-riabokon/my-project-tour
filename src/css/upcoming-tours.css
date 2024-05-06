@@ -3,12 +3,14 @@
   gap: 20px;
 }
 
-.tour-card {
-  display: none;
-}
+@media only screen and (max-width: 1439px) {
+  .tour-card {
+    display: none;
+  }
 
-.tour-card.active {
-  display: block;
+  .tour-card.active {
+    display: block;
+  }
 }
 
 .tour-card-text {
