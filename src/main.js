@@ -11,8 +11,12 @@ function showCurrentCard() {
   tourCards[currentIndex].classList.add('active');
   // Показуємо перші дві картки при завантаженні сторінки на екранах ширше за 768px і менше за 1440px
   if (window.matchMedia('(min-width: 768px) and (max-width: 1439px)').matches) {
-    // tourCards[currentIndex].classList.add('active');
-    tourCards[currentIndex + 1].classList.add('active');
+    if (tourCards[currentIndex + 1]) {
+      tourCards[currentIndex + 1].classList.add('active');
+    } else {
+      currentIndex = 0; // Повертаємося до першої карти, якщо ми досягли останньої
+      showCurrentCard(); // Викликаємо showCurrentCard() ще раз, щоб показати перші дві картки
+    }
   }
 }
 
