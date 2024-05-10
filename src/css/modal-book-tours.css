@@ -1,5 +1,6 @@
 /* #region  Backdrop*/
-.backdrop {
+.backdrop,
+.backdrop-tour {
   position: fixed;
   inset: 0;
   z-index: 999;
@@ -11,7 +12,8 @@
   background-color: rgba(32, 35, 33, 0.5);
 }
 
-.backdrop.is-open {
+.backdrop.is-open,
+.backdrop-tour.is-open {
   opacity: 1;
   visibility: visible;
 }

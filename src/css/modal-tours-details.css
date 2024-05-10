@@ -1,0 +1,317 @@
+/* #region  Background Image*/
+.backdrop-tour {
+  z-index: 99;
+}
+
+.modal-item {
+  background-repeat: no-repeat;
+  max-width: 375px;
+  background-position: 0%;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  padding: 56px 37px 20px 0px;
+  margin: 0 auto;
+}
+
+.img-hoverla-day1 {
+  background-image: url('../img/upcoming-tours/mobile/overlay/hoverla-day-one@1x.jpg');
+}
+
+@media (min-resolution: 192dpi) {
+  .img-hoverla-day1 {
+    background-image: url('../img/upcoming-tours/mobile/overlay/hoverla-day-one@2x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-item {
+    max-width: 768px;
+    padding: 60px 365px 20px 0px;
+  }
+
+  .img-hoverla-day1 {
+    background-image: url('../img/upcoming-tours/tablet/overlay/hoverla-day-one@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-hoverla-day1 {
+      background-image: url('../img/upcoming-tours/tablet/overlay/hoverla-day-one@2x.jpg');
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal-item {
+    max-width: 1440px;
+    padding: 108px 693px 20px 0px;
+  }
+
+  .img-hoverla-day1 {
+    background-image: url('../img/upcoming-tours/desktop/overlay/hoverla-day-one@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-hoverla-day1 {
+      background-image: url('../img/upcoming-tours/desktop/overlay/hoverla-day-one@2x.jpg');
+    }
+  }
+}
+
+.img-hoverla-day2 {
+  background-image: url('../img/upcoming-tours/mobile/overlay/hoverla-day-two@1x.jpg');
+}
+
+@media (min-resolution: 192dpi) {
+  .img-hoverla-day2 {
+    background-image: url('../img/upcoming-tours/mobile/overlay/hoverla-day-two@2x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-item {
+    max-width: 768px;
+    padding: 60px 365px 20px 0px;
+  }
+
+  .img-hoverla-day2 {
+    background-image: url('../img/upcoming-tours/tablet/overlay/hoverla-day-two@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-hoverla-day2 {
+      background-image: url('../img/upcoming-tours/tablet/overlay/hoverla-day-two@2x.jpg');
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal-item {
+    max-width: 1440px;
+    padding: 108px 693px 20px 0px;
+  }
+
+  .img-hoverla-day2 {
+    background-image: url('../img/upcoming-tours/desktop/overlay/hoverla-day-two@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-hoverla-day2 {
+      background-image: url('../img/upcoming-tours/desktop/overlay/hoverla-day-two@2x.jpg');
+    }
+  }
+}
+
+.img-hoverla-day3 {
+  background-image: url('../img/upcoming-tours/mobile/overlay/hoverla-day-three@1x.jpg');
+}
+
+@media (min-resolution: 192dpi) {
+  .img-hoverla-day3 {
+    background-image: url('../img/upcoming-tours/mobile/overlay/hoverla-day-three@2x.jpg');
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-item {
+    max-width: 768px;
+    padding: 60px 365px 20px 0px;
+  }
+
+  .img-hoverla-day3 {
+    background-image: url('../img/upcoming-tours/tablet/overlay/hoverla-day-three@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-hoverla-day3 {
+      background-image: url('../img/upcoming-tours/tablet/overlay/hoverla-day-three@2x.jpg');
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .modal-item {
+    max-width: 1440px;
+    padding: 108px 693px 20px 0px;
+  }
+
+  .img-hoverla-day3 {
+    background-image: url('../img/upcoming-tours/desktop/overlay/hoverla-day-three@1x.jpg');
+  }
+
+  @media (min-resolution: 192dpi) {
+    .img-hoverla-day3 {
+      background-image: url('../img/upcoming-tours/desktop/overlay/hoverla-day-three@2x.jpg');
+    }
+  }
+}
+
+/* #endregion  */
+
+/* #region  title*/
+.title-modal-item {
+  color: var(--light);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-left: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title-modal-item {
+    font-size: 24px;
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .title-modal-item {
+    font-size: 40px;
+    padding-left: 100px;
+  }
+}
+/* #endregion  */
+
+/* #region  flag day*/
+.day-modal-item {
+  color: var(--light);
+  font-size: 16px;
+  font-weight: 500;
+
+  padding: 14px 48px;
+  margin-bottom: 12px;
+
+  border-radius: 0px 8px 8px 0px;
+  background: var(--blue);
+}
+
+@media only screen and (min-width: 768px) {
+  .day-modal-item {
+    font-size: 20px;
+    padding: 12px 60px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .day-modal-item {
+    font-size: 28px;
+    padding: 7px 100px;
+  }
+}
+/* #endregion  */
+
+/* #region  plan tour*/
+.list-modal-item {
+  color: var(--light);
+  font-size: 16px;
+  font-weight: 500;
+
+  padding-left: 48px;
+}
+
+.list-modal-item li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .list-modal-item {
+    font-size: 20px;
+    padding-left: 60px;
+  }
+
+  .list-modal-item li:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .list-modal-item {
+    font-size: 28px;
+    padding-left: 100px;
+  }
+}
+/* #endregion  */
+
+/* #region  */
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .block-modal-item {
+    min-width: 320px;
+    max-width: 375px;
+  }
+}
+
+.block-modal-item {
+  background-color: #fff;
+  padding: 28px 0;
+  text-align: center;
+  width: 375px;
+}
+
+@media only screen and (min-width: 768px) {
+  .block-modal-item {
+    padding: 40px 0;
+    width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .block-modal-item {
+    padding: 48px 0;
+    width: 1440px;
+  }
+}
+
+.block-modal-item .section-text.semibold {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .block-modal-item .section-text.semibold {
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .block-modal-item .section-text.semibold {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
+
+.block-modal-item .btn.open-modal-window {
+  font-weight: 500;
+  font-size: 16px;
+  width: 285px;
+  height: 52px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .block-modal-item .btn.open-modal-window {
+    font-size: 20px;
+    width: 394px;
+    height: 56px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .block-modal-item .btn.open-modal-window {
+    font-size: 24px;
+    width: 575px;
+    height: 69px;
+  }
+}
+/* #endregion  */
+
+.btn-close {
+  position: fixed;
+}
+
+/* 
+<div class="block-modal-item">
+      <p class="section-text semibold">From UAH 4,499/person</p>
+      <button class="btn open-modal-window" type="button">BOOK A TOUR</button>
+    </div> 
+    
+    */

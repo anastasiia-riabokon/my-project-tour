@@ -43,3 +43,65 @@ rightArrowBtn.addEventListener('click', goToNextCard);
 showCurrentCard();
 
 // #endregion
+
+// #region Open Modal Windows
+const ref = {
+  backdropWin: document.querySelector('.backdrop'),
+  backdropTour: document.querySelector('.backdrop-tour'),
+  btnOpenModal: document.querySelectorAll('.open-modal-window'),
+  btnOpenDetailTour: document.querySelectorAll('.tour-btn-open'),
+  btnCloseModal: document.querySelectorAll('.btn-close'),
+};
+
+const {
+  backdropWin,
+  backdropTour,
+  btnOpenModal,
+  btnOpenDetailTour,
+  btnCloseModal,
+} = ref;
+
+btnOpenModal.forEach(btn => {
+  btn.addEventListener('click', event => {
+    if (event.target.nodeName !== 'BUTTON') return;
+
+    if (!backdropWin.classList.contains('is-open')) {
+      backdropWin.classList.add('is-open');
+      isOpen(backdropWin);
+    }
+  });
+});
+
+btnOpenDetailTour.forEach(btn => {
+  btn.addEventListener('click', event => {
+    if (event.target.nodeName !== 'BUTTON') return;
+
+    if (!backdropTour.classList.contains('is-open')) {
+      backdropTour.classList.add('is-open');
+      isOpen(backdropTour);
+    }
+  });
+});
+
+function isOpen(backdrop) {
+  window.addEventListener('keydown', event => onClose(backdrop, event));
+  btnCloseModal.forEach(btn => {
+    btn.addEventListener('click', event => onClose(backdrop, event));
+  });
+}
+
+function hideModal(backdrop) {
+  backdrop.classList.remove('is-open');
+  window.removeEventListener('keydown', onClose);
+  btnCloseModal.forEach(btn => {
+    btn.removeEventListener('click', onClose);
+  });
+}
+
+function onClose(backdrop, evt) {
+  hideModal(backdrop);
+  if (evt.code === 'Escape') {
+    hideModal(backdrop);
+  }
+}
+// #endregion
