@@ -1,5 +1,6 @@
 /* #region  BG*/
-.hero-page {
+.hero-page,
+.bg-img {
   background-color: rgba(17, 17, 17, 0.4);
   background-repeat: no-repeat;
   background-image: url('../img/hero/mobile/hero-bg@1x.jpg');
@@ -17,7 +18,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-page {
+  .hero-page,
+  .bg-img {
     background-image: url('../img/hero/tablet/hero-bg@1x.jpg');
     max-width: 768px;
     padding: 34px 0 185px;

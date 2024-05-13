@@ -19,6 +19,7 @@
 /* modal windows */
 @import url('./modal-book-tours.css');
 @import url('./modal-tours-details.css');
+@import url('./mobile-tablet-menu.css');
 
 :root {
   --light: #f7fbfb;

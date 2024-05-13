@@ -303,15 +303,3 @@
   }
 }
 /* #endregion  */
-
-.btn-close {
-  position: fixed;
-}
-
-/* 
-<div class="block-modal-item">
-      <p class="section-text semibold">From UAH 4,499/person</p>
-      <button class="btn open-modal-window" type="button">BOOK A TOUR</button>
-    </div> 
-    
-    */
